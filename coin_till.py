@@ -5,11 +5,12 @@ def floor(x):
     return int(x-x%1)
 
 ''' 
-Find x value which fulfils y and reminder
+Find value z which fulfills solution y for given multiplier x
 
 y = target value
 x = multiplier
 i = max value for z
+r = reminder
 '''
 def find_yx_and_r(y, x, i):
     z = ( floor(y/x) if y<x*i else i )
